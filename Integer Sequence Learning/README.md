@@ -34,7 +34,7 @@ Based on multiple experiments, the final model used to implement predition in te
 
 As for the test set the final element has been removed, which is the target we are trying to predict. Based on above model, we will try to generate the last item of each sequence of the test set.
 
-The big question of this investigation, is whether this model can be used to predict the last term of a given sequence accurately. As the nature of the challenge was a contest, the predictions created by the model were submitted online on Kaggle for a blind evaluation and received a decent score `0.13477` which is ranking around top 43%.
+The big question of this investigation, is whether this model can be used to predict the last term of a given sequence accurately. As the nature of the challenge was a contest, the predictions created by the model were submitted online on Kaggle for a blind evaluation and received a decent score `0.13477` which is ranking around top 30%.
 
 ![](https://github.com/theodoreguo/Kaggle/blob/master/Integer%20Sequence%20Learning/Images/Kaggle%20Integer%20Sequence%20Learning%20Submission.png)
 
