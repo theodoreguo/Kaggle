@@ -75,7 +75,7 @@ def create_val_data():
 
     xs, ys = [], []
     for line in lines:  
-        digits = line[:line.rfind(",")+1][-Hyperparams.ctxlen:]
+        digits = line[:line.rfind(",") + 1][-Hyperparams.ctxlen:]
         x = [digit2idx[digit] for digit in digits]
         x = [0] * (Hyperparams.ctxlen - len(x)) + x # Zero prepadding
         xs.append(x)
