@@ -80,7 +80,7 @@ def create_val_data():
         x = [0] * (Hyperparams.ctxlen - len(x)) + x # Zero prepadding
         xs.append(x)
         
-        ys.append(line[line.rfind(",")+1:]) # Ground truth
+        ys.append(line[line.rfind(",") + 1:]) # Ground truth
 
     X = np.array(xs)
                  
