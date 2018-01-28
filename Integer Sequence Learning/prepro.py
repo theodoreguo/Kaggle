@@ -22,7 +22,7 @@ def create_train_data():
     digit2idx, idx2digit = load_vocab()
 
     train_lines = [line.split('"')[1] for line in open('../data/train.csv', 'r').read().splitlines()[1:]]
-    train_lines = train_lines[:-Hyperparams.vallen] # The last 640 rows in the training data is reserved for devset
+    train_lines = train_lines[:-Hyperparams.vallen] # The last Hyperparams.vallen rows in the training data is reserved for devset
     test_lines = [line.split('"')[1] for line in open('../data/test.csv', 'r').read().splitlines()[1:]]
             
     xs0, xs1, xs2, xs3 = [], [], [], []
